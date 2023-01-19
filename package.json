@@ -1,0 +1,16 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "node-sass": "^8.0.0"
+  }
+}
