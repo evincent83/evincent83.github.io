@@ -102,6 +102,7 @@ main .vertical-mail a {
   position: relative;
   bottom: 20px;
   letter-spacing: 1px;
+  font-size: 14px;
 }
 main .vertical-mail a:hover {
   color: #61dafb;
