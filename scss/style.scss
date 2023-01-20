@@ -34,6 +34,9 @@ main {
 h2 {
   margin: 0;
 }
+b {
+  color: $special-color;
+}
 /* Header */
 header {
   display: flex;
@@ -48,7 +51,7 @@ header {
     img {
       width: 70px;
       height: 70px;
-      padding-left: 20px;
+      padding-left: 80px;
     }
     a {
       text-decoration: none;
@@ -59,12 +62,11 @@ header {
       list-style-type: none;
       display: flex;
       flex-direction: row;
-      padding: 0;
+      padding: 0 80px 0 0;
       li {
         padding: 0 20px;
         font-family: $secondary-font;
         b {
-          color: $special-color;
           padding-right: 5px;
         }
       }
@@ -75,11 +77,38 @@ header {
 /* Section */
 main {
   font-family: $primary-font;
+  .vertical-mail {
+    display: flex;
+    position: fixed;
+    left: auto;
+    right: 50px;
+    bottom: 0px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    &::after {
+      content:"";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0 auto;
+      background-color: $special-color;
+    }
+    a {
+      text-decoration: none;
+      color: $text-color;
+      position: relative;
+      bottom: 20px;
+      letter-spacing: 1px;
+      &:hover {
+        color: $special-color;
+      }
+    }
+  }
   section {
-    padding: 50px 100px 0 100px;
-    height: 850px;
+    padding: 50px 200px 0 200px;
     .h2-section {
       display: flex;
+      text-shadow: 2px 2px 2px #4444dd;
       &::after {
         content: "";
         width: 300px;
@@ -90,7 +119,6 @@ main {
         background-color: $special-color;
       }
       b {
-        color: $special-color;
         padding-right: 5px;
       }
     }
@@ -100,6 +128,7 @@ main {
     }
   }
   .title-section {
+    height: 800px;
     text-align: center;
     h1 {
       font-size: 34px;
@@ -135,32 +164,47 @@ main {
     }
   }
   .about-section {
-    ul.list-skill {
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-      list-style: none;
-      margin-top: 50px;
-      padding: 0;
-      li {
-        padding: 2px 8px;
-        &::before {
-          content: "▹";
-          color: $special-color;
-          padding-right: 5px;
+    height: 700px;
+    [data-aos="fade-down"] {
+      transform: translate3d(0, -30px, 0);
+    }
+    .about-text {
+      ul.list-skill {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        list-style: none;
+        margin: 30px 0;
+        width: 50%;
+        padding: 0;
+        li {
+          padding: 2px 8px;
+          &::before {
+            content: "▹";
+            color: $special-color;
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+    #button-cv {
+      display: flex;
+      a {
+        border-radius: 10px;
+        text-decoration: none;
+        color: $bg-color;
+        background-color: $special-color;
+        padding: 10px 25px;
+        filter: drop-shadow(3px 3px 3px #4444dd);
+        &:hover {
+          opacity: 0.8;
         }
       }
     }
   }
   .project-section {
+    height: 700px;
     [data-aos="fade-down"] {
-      transform: translate3d(0, -50px, 0);
-    }
-    .project-text {
-      p {
-        b{
-          color: $special-color;
-        }
-      }
+      transform: translate3d(0, -30px, 0);
     }
     .card-group {
       display: flex;
@@ -209,6 +253,7 @@ main {
     }
   }
   .contact-section {
+    height: 500px;
     .contact-me {
       display: flex;
       justify-content: space-around;
@@ -216,14 +261,27 @@ main {
       a {
         border-radius: 10px;
         text-decoration: none;
-        color: $special-color;
-        background-color: transparent;
-        border: 1px solid $special-color;
+        color: $bg-color;
+        background-color: $special-color;
         padding: 15px;
+        filter: drop-shadow(3px 3px 3px #4444dd);
         i {
           padding-right: 10px;
         }
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
+  }
+}
+/* Footer */
+footer {
+  height: 80px;
+  p {
+    font-size: 16px;
+    font-family:$secondary-font;
+    text-align: center;
+    margin: 0;
   }
 }

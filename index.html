@@ -4,16 +4,20 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="author" content="Enzo Vincent">
+    <meta name="description" content="Bonjour et bienvenue sur mon portfolio, je m'appelle Enzo et je suis développeur web - front-end. Passionné par l'informatique depuis de nombreuses années, je me suis spécialisé et formé récemment dans le développement web...">
+    <meta name="keywords" content="Portfolio Enzo Vincent, Portfolio Développeur Web, Développeur Front-end">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/5ceab7bfe0.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
     <title>Enzo Vincent | Développeur Web</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="https://github.com/evincent83"><img src="img/logo.png" alt="Logo"></a>
+            <a href="https://github.com/evincent83" target="_blank"><img src="img/logo.png" alt="Logo"></a>
             <ul>
                 <a href="#about">
                     <li><b>01.</b>À Propos</li>
@@ -21,40 +25,41 @@
                 <a href="#projet">
                     <li><b>02.</b>Mes Projets</li>
                 </a>
-                <a href="#moncv">
-                    <li><b>03.</b>Mon CV</li>
-                </a>
                 <a href="#contact">
-                    <li><b>04.</b>Contact</li>
+                    <li><b>03.</b>Contact</li>
                 </a>
             </ul>
         </nav>
     </header>
     <main>
+        <div class="vertical-mail">
+            <a href="mailto:vincent.enzo.pro@gmail.com" target="_blank">vincent.enzo.pro@gmail.com</a>
+        </div>
         <section class="title-section">
             <h1>Enzo Vincent</h1>
             <h2 id="sub-title">Développeur Web | Front-end</h2>
+            <h3>EN COURS DE DEVELOPPEMENT...</h3>
         </section>
         <section id="about" class="about-section">
             <h2 class="h2-section"><b>01.</b>À Propos</h2>
             <div class="about-text">
-                <p>Bonjour et bienvenue sur mon portfolio, je m'appelle Enzo et je suis développeur web - front-end.
-                    Passionné par l'informatique depuis de nombreuses années, je me suis spécialisé et formé récemment dans le développement web.</p>
-                <p>Je suis curieux, motivé et ambitieux de réaliser des projets.
-                    J'aime apprendre constamment des nouvelles choses.</p>
-                <p>Voici différentes technologies avec lesquels j'ai pu travailler :</p>
+                <p>Bonjour et bienvenue sur mon portfolio, je m'appelle Enzo et je suis développeur web - front-end. Passionné par l'informatique depuis de nombreuses années, je me suis spécialisé et formé récemment dans le développement web. Je suis curieux, motivé et ambitieux de réaliser des projets. J'aime apprendre constamment des nouvelles choses.</p>
+                <p>Voici différentes <b>technologies</b> avec lesquels j'ai pu travailler :</p>
+                <div data-aos="fade-down" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
+                    <ul class="list-skill">
+                        <li>HTML</li>
+                        <li>CSS / SCSS</li>
+                        <li>Javascript</li>
+                        <li>React</li>
+                        <li>NodeJS</li>
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
             </div>
-            <div data-aos="fade-down" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
-                <ul class="list-skill">
-                    <li>HTML</li>
-                    <li>CSS / SCSS</li>
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>NodeJS</li>
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                    <li>GitHub</li>
-                </ul>
+            <div id="button-cv">
+                <a href="file/enzo_vincent.pdf" target="_blank">Mon CV</a>
             </div>
         </section>
         <section id="projet" class="project-section">
@@ -116,20 +121,20 @@
                 </div>
             </div>
         </section>
-        <section id="moncv" class="cv-section">
-            <h2 class="h2-section"><b>03.</b>Mon CV</h2>
-
-        </section>
         <section id="contact" class="contact-section">
-            <h2 class="h2-section"><b>04.</b>Contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum libero metus, sit amet suscipit nisi luctus et. Integer ac fermentum odio. Nam gravida rutrum diam, sed sodales diam euismod at. Morbi fermentum sem ac egestas fermentum. Curabitur a pharetra ex. Donec condimentum, diam ac fringilla tempus, ante ex ultricies odio, id volutpat risus turpis sit amet mauris. Nunc laoreet risus quis mi hendrerit, nec auctor nulla porttitor.</p>
+            <h2 class="h2-section"><b>03.</b>Contact</h2>
+            <p>Actuellement en recherche d'emploi, je suis disposé à répondre à toute proposition.
+                Vous pouvez retrouver mes différents réseaux ci-dessous :</p>
             <div class="contact-me">
                 <a href="mailto:vincent.enzo.pro@gmail.com"><i class="fa-solid fa-envelope"></i>Mail</a>
-                <a href="https://github.com/evincent83"><i class="fa-brands fa-github"></i>GitHub</a>
-                <a href="https://www.linkedin.com/in/enzo-vincent-4a0101198/"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <a href="https://github.com/evincent83" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                <a href="https://www.linkedin.com/in/enzo-vincent-4a0101198/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
             </div>
         </section>
     </main>
+    <footer>
+            <p>Design & Built by Enzo Vincent&copy;</p>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
