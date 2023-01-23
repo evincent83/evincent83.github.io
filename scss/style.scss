@@ -163,6 +163,15 @@ main {
         }
       }
     }
+    .picture-me {
+      padding-top: 80px;
+      img {
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 2px solid $special-color;
+      }
+    }
   }
   .about-section {
     height: 700px;

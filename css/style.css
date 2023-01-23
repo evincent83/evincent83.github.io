@@ -165,6 +165,15 @@ main .title-section #sub-title {
     border-color: #61dafb;
   }
 }
+main .title-section .picture-me {
+  padding-top: 80px;
+}
+main .title-section .picture-me img {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid #61dafb;
+}
 main .about-section {
   height: 700px;
 }
