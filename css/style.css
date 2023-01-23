@@ -61,18 +61,21 @@ header nav a {
   line-height: 0;
   color: #f0f3f6;
 }
-header nav ul {
+header nav ol {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   padding: 0 80px 0 0;
 }
-header nav ul li {
+header nav ol li {
   padding: 0 20px;
   font-family: "Space Mono", monospace;
 }
-header nav ul li b {
+header nav ol li b {
   padding-right: 5px;
+}
+header nav ol li:hover {
+  color: #61dafb;
 }
 
 /* Section */
@@ -108,7 +111,7 @@ main .vertical-mail a:hover {
   color: #61dafb;
 }
 main section {
-  padding: 50px 200px 0 200px;
+  padding: 50px 150px 0 150px;
 }
 main section .h2-section {
   display: flex;
@@ -167,6 +170,9 @@ main .title-section #sub-title {
 }
 main .title-section .picture-me {
   padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .title-section .picture-me img {
   max-height: 400px;
@@ -195,6 +201,14 @@ main .about-section .about-text ul.list-skill li::before {
   content: "▹";
   color: #61dafb;
   padding-right: 5px;
+}
+main .about-section .about-text p {
+  margin: 0;
+  padding-top: 16px;
+}
+main .about-section .about-text p:nth-child(2) {
+  padding-top: 50px;
+  margin: 0;
 }
 main .about-section #button-cv {
   display: flex;
@@ -228,7 +242,7 @@ main .project-section .card-group {
 main .project-section .card-group .card {
   overflow: hidden;
   border-radius: 15px;
-  flex-basis: 29%;
+  flex-basis: 27%;
   position: relative;
   background-color: white;
 }
@@ -287,12 +301,30 @@ main .contact-section .contact-me a:hover {
 /* Footer */
 footer {
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer p {
   font-size: 16px;
   font-family: "Space Mono", monospace;
-  text-align: center;
   margin: 0;
+}
+
+/* min-width: 768px - max-width: 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main section {
+    padding: 50px 100px 0 100px;
+  }
+  main .title-section #sub-title {
+    animation: typing 2.5s steps(80, end), blink-caret 0.8s step-end 4 forwards;
+  }
+  main .project-section {
+    height: 850px;
+  }
+  main .project-section .card-group .card {
+    flex-basis: 45%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
