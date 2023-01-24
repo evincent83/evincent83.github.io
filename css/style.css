@@ -245,13 +245,14 @@ main .project-section .card-group .card {
   flex-basis: 27%;
   position: relative;
   background-color: white;
+  border: 1px solid #61dafb;
 }
 main .project-section .card-group .card img {
   width: 100%;
   object-fit: cover;
   display: block;
 }
-main .project-section .card-group .card .card-text {
+main .project-section .card-group .card .card-content {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -265,15 +266,19 @@ main .project-section .card-group .card .card-text {
   align-items: center;
   cursor: pointer;
 }
-main .project-section .card-group .card .card-text p {
+main .project-section .card-group .card .card-content p {
   font-size: 22px;
   color: #000000;
   padding: 20px;
   margin: 0px;
 }
-main .project-section .card-group .card .card-text:hover {
+main .project-section .card-group .card .card-content img {
+  width: 25%;
+  padding: 10px;
+}
+main .project-section .card-group .card .card-content:hover {
   opacity: 0.9;
-  background-color: #61dafb;
+  background-color: #f0f3f6;
 }
 main .contact-section {
   height: 500px;
@@ -437,7 +442,7 @@ footer p {
   main .project-section .card-group .card {
     flex-basis: 100%;
   }
-  main .project-section .card-group .card .card-text:active {
+  main .project-section .card-group .card .card-content:active {
     opacity: 0.9;
     background-color: #61dafb;
   }
