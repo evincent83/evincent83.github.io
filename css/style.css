@@ -56,11 +56,6 @@ header nav img {
   height: 70px;
   padding-left: 80px;
 }
-header nav a {
-  text-decoration: none;
-  line-height: 0;
-  color: #f0f3f6;
-}
 header nav #navbar-ol {
   list-style-type: none;
   display: flex;
@@ -71,11 +66,16 @@ header nav #navbar-ol li {
   padding: 0 20px;
   font-family: "Space Mono", monospace;
 }
+header nav #navbar-ol li a {
+  text-decoration: none;
+  line-height: 0;
+  color: #f0f3f6;
+}
+header nav #navbar-ol li a:hover {
+  color: #61dafb;
+}
 header nav #navbar-ol li b {
   padding-right: 5px;
-}
-header nav #navbar-ol li:hover {
-  color: #61dafb;
 }
 
 /* Section */
@@ -389,16 +389,16 @@ footer p {
     padding-left: 0px;
     margin: 0;
   }
-  header nav #hamburger-menu #sidebar-menu #sidebar-ol a {
+  header nav #hamburger-menu #sidebar-menu #sidebar-ol li {
+    list-style-type: none;
+    padding: 25px 0;
+  }
+  header nav #hamburger-menu #sidebar-menu #sidebar-ol li a {
     color: #f0f3f6;
     font-size: 20px;
     text-decoration: none;
   }
-  header nav #hamburger-menu #sidebar-menu #sidebar-ol a li {
-    list-style-type: none;
-    padding: 25px 0;
-  }
-  header nav #hamburger-menu #sidebar-menu #sidebar-ol a:active {
+  header nav #hamburger-menu #sidebar-menu #sidebar-ol li a:active {
     text-decoration: underline;
     color: #61dafb;
   }

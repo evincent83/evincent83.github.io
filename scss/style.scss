@@ -53,11 +53,6 @@ header {
       height: 70px;
       padding-left: 80px;
     }
-    a {
-      text-decoration: none;
-      line-height: 0;
-      color: $text-color;
-    }
     #navbar-ol {
       list-style-type: none;
       display: flex;
@@ -66,11 +61,16 @@ header {
       li {
         padding: 0 20px;
         font-family: $secondary-font;
+        a {
+          text-decoration: none;
+          line-height: 0;
+          color: $text-color;
+          &:hover {
+            color: $special-color;
+          }
+        }
         b {
           padding-right: 5px;
-        }
-        &:hover {
-          color: $special-color;
         }
       }
     }
@@ -249,7 +249,6 @@ main {
           width: 100%;
           object-fit: cover;
           display: block;
-          
         }
         .card-content {
           opacity: 0;
@@ -404,18 +403,18 @@ footer {
             font-family: $secondary-font;
             padding-left: 0px;
             margin: 0;
-            a {
-              color: $text-color;
-              font-size: 20px;
-              text-decoration: none;
-              li {
-                list-style-type: none;
-                padding: 25px 0;
+            li {
+              list-style-type: none;
+              padding: 25px 0;
+              a {
+                color: $text-color;
+                font-size: 20px;
+                text-decoration: none;
               }
-            }
-            a:active {
-              text-decoration: underline;
-              color: $special-color;
+              a:active {
+                text-decoration: underline;
+                color: $special-color;
+              }
             }
           }
         }
