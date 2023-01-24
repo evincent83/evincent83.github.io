@@ -274,6 +274,7 @@ main .project-section .card-group .card .card-content p {
 }
 main .project-section .card-group .card .card-content img {
   width: 25%;
+  height: auto;
   padding: 10px;
 }
 main .project-section .card-group .card .card-content:hover {
