@@ -172,6 +172,7 @@ main {
       align-items: center;
       justify-content: center;
       img {
+        width: auto;
         max-height: 400px;
         aspect-ratio: auto 1/1;
         object-fit: cover;

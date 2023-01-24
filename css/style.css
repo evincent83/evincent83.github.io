@@ -175,6 +175,7 @@ main .title-section .picture-me {
   justify-content: center;
 }
 main .title-section .picture-me img {
+  width: auto;
   max-height: 400px;
   aspect-ratio: auto 1/1;
   object-fit: cover;
