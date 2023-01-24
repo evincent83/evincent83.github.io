@@ -5,6 +5,7 @@
 html {
   scrollbar-color: #61dafb #0a0c10;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 /* Chrome, Safari, Edge */
@@ -175,7 +176,7 @@ main .title-section .picture-me {
   justify-content: center;
 }
 main .title-section .picture-me img {
-  width: auto;
+  width: 300px;
   max-height: 400px;
   aspect-ratio: auto 1/1;
   object-fit: cover;
@@ -346,6 +347,9 @@ footer p {
   }
 }
 @media screen and (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
   header nav {
     /* Hide toggle selector */
     /* Hamburger icon */
@@ -421,7 +425,7 @@ footer p {
     white-space: normal;
   }
   main section .h2-section::after {
-    width: 60px;
+    width: 50px;
   }
   main .about-section {
     padding-top: 50px;

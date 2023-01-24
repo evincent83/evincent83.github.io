@@ -10,6 +10,8 @@ $special-color: #61dafb;
 html {
   scrollbar-color: $special-color $bg-color;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+
 }
 /* Chrome, Safari, Edge */
 ::-webkit-scrollbar {
@@ -172,7 +174,7 @@ main {
       align-items: center;
       justify-content: center;
       img {
-        width: auto;
+        width:300px;
         max-height: 400px;
         aspect-ratio: auto 1/1;
         object-fit: cover;
@@ -351,6 +353,8 @@ footer {
   }
 }
 @media screen and (max-width: 768px) /* Phone*/ {
+html {scroll-behavior: smooth;}
+
   header {
     nav {
       img {
@@ -443,7 +447,7 @@ footer {
         white-space: normal;
       }
       .h2-section::after {
-        width: 60px;
+        width: 50px;
       }
     }
     .about-section {
