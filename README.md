@@ -1,6 +1,2 @@
 # evincent83.github.io
-Portfolio (en cours de développement...)
-
-Task :
-- Responsive pour mobile en cours...
-- Optimisation Lighthouse SEO...
+Portfolio
