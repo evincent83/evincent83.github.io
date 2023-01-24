@@ -271,6 +271,7 @@ main {
           }
           img {
             width: 25%;
+            aspect-ratio: auto 640/360;
             height: auto;
             padding: 10px;
           }

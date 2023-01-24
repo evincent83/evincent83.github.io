@@ -274,6 +274,7 @@ main .project-section .card-group .card .card-content p {
 }
 main .project-section .card-group .card .card-content img {
   width: 25%;
+  aspect-ratio: auto 640/360;
   height: auto;
   padding: 10px;
 }
