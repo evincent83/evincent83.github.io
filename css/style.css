@@ -176,6 +176,7 @@ main .title-section .picture-me {
 }
 main .title-section .picture-me img {
   max-height: 400px;
+  aspect-ratio: auto 1/1;
   object-fit: cover;
   border-radius: 20px;
   border: 2px solid #61dafb;
@@ -249,6 +250,7 @@ main .project-section .card-group .card {
 }
 main .project-section .card-group .card img {
   width: 100%;
+  aspect-ratio: auto 1/1;
   object-fit: cover;
   display: block;
 }
@@ -274,7 +276,7 @@ main .project-section .card-group .card .card-content p {
 }
 main .project-section .card-group .card .card-content img {
   width: 25%;
-  aspect-ratio: auto 640/360;
+  aspect-ratio: auto 1/1;
   height: auto;
   padding: 10px;
 }

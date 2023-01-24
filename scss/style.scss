@@ -173,6 +173,7 @@ main {
       justify-content: center;
       img {
         max-height: 400px;
+        aspect-ratio: auto 1/1;
         object-fit: cover;
         border-radius: 20px;
         border: 2px solid $special-color;
@@ -247,6 +248,7 @@ main {
         border: 1px solid $special-color;
         img {
           width: 100%;
+          aspect-ratio: auto 1/1;
           object-fit: cover;
           display: block;
         }
@@ -271,7 +273,7 @@ main {
           }
           img {
             width: 25%;
-            aspect-ratio: auto 640/360;
+            aspect-ratio: auto 1/1;
             height: auto;
             padding: 10px;
           }
