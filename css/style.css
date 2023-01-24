@@ -61,20 +61,20 @@ header nav a {
   line-height: 0;
   color: #f0f3f6;
 }
-header nav ol {
+header nav #navbar-ol {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   padding: 0 80px 0 0;
 }
-header nav ol li {
+header nav #navbar-ol li {
   padding: 0 20px;
   font-family: "Space Mono", monospace;
 }
-header nav ol li b {
+header nav #navbar-ol li b {
   padding-right: 5px;
 }
-header nav ol li:hover {
+header nav #navbar-ol li:hover {
   color: #61dafb;
 }
 
@@ -150,7 +150,7 @@ main .title-section #sub-title {
   margin: 0 auto;
   letter-spacing: 5px;
   border-right: 2px solid #61dafb;
-  animation: typing 5s steps(80, end), blink-caret 0.8s step-end 4 forwards;
+  animation: typing 4s steps(80, end), blink-caret 0.8s step-end 4 forwards;
 }
 @keyframes typing {
   from {
@@ -311,6 +311,15 @@ footer p {
   margin: 0;
 }
 
+/* Navigation menu hamburger for mobile */
+#hamburger-input {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
 /* min-width: 768px - max-width: 992px */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   main section {
@@ -324,6 +333,123 @@ footer p {
   }
   main .project-section .card-group .card {
     flex-basis: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    /* Hide toggle selector */
+    /* Hamburger icon */
+  }
+  header nav img {
+    padding-left: 20px;
+  }
+  header nav #navbar-ol {
+    display: none;
+  }
+  header nav #hamburger-input {
+    display: none;
+  }
+  header nav #hamburger-menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border: none;
+    padding: 0px;
+    margin-right: 20px;
+    background: linear-gradient(to bottom, #61dafb, #61dafb 20%, #0a0c10 20%, #0a0c10 40%, #61dafb 40%, #61dafb 60%, #0a0c10 60%, #0a0c10 80%, #61dafb 80%, #61dafb 100%);
+    /* Hamburger menu slide */
+  }
+  header nav #hamburger-menu #sidebar-menu {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    bottom: 0;
+    width: 200px;
+    background-color: #0a0c10;
+    overflow-y: hidden;
+    height: 100%;
+    border-left: 2px solid #61dafb;
+    transition: 0.3s;
+    padding: 0px 10px;
+  }
+  header nav #hamburger-menu #sidebar-menu #sidebar-ol {
+    font-family: "Space Mono", monospace;
+    padding-left: 0px;
+    margin: 0;
+  }
+  header nav #hamburger-menu #sidebar-menu #sidebar-ol a {
+    color: #f0f3f6;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  header nav #hamburger-menu #sidebar-menu #sidebar-ol a li {
+    list-style-type: none;
+    padding: 25px 0;
+  }
+  header nav #hamburger-menu #sidebar-menu #sidebar-ol a:active {
+    text-decoration: underline;
+    color: #61dafb;
+  }
+  header nav #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    right: 0;
+  }
+  main .vertical-mail {
+    display: none;
+  }
+  main section {
+    padding: 0 25px;
+  }
+  main section p {
+    text-align: start;
+    white-space: normal;
+  }
+  main section .h2-section::after {
+    width: 60px;
+  }
+  main .about-section {
+    padding-top: 50px;
+    height: max-content;
+  }
+  main .about-section .about-text ul.list-skill {
+    width: 100%;
+  }
+  main .title-section {
+    height: max-content;
+    padding-top: 50px;
+  }
+  main .title-section #sub-title {
+    white-space: normal;
+    letter-spacing: 0px;
+    border-right: none;
+    animation: none;
+  }
+  main .project-section {
+    height: max-content;
+    padding-top: 50px;
+  }
+  main .project-section .card-group .card {
+    flex-basis: 100%;
+  }
+  main .project-section .card-group .card .card-text:active {
+    opacity: 0.9;
+    background-color: #61dafb;
+  }
+  main .contact-section {
+    padding-top: 50px;
+    height: max-content;
+  }
+  main .contact-section .contact-me {
+    flex-direction: column;
+  }
+  main .contact-section .contact-me a {
+    margin-top: 25px;
   }
 }
 

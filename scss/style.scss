@@ -58,7 +58,7 @@ header {
       line-height: 0;
       color: $text-color;
     }
-    ol {
+    #navbar-ol {
       list-style-type: none;
       display: flex;
       flex-direction: row;
@@ -147,7 +147,7 @@ main {
       margin: 0 auto;
       letter-spacing: 5px;
       border-right: 2px solid $special-color;
-      animation: typing 5s steps(80, end), blink-caret 0.8s step-end 4 forwards;
+      animation: typing 4s steps(80, end), blink-caret 0.8s step-end 4 forwards;
       @keyframes typing {
         from {
           width: 0;
@@ -311,6 +311,13 @@ footer {
     margin: 0;
   }
 }
+/* Navigation menu hamburger for mobile */
+#hamburger-input {
+  display: none;
+}
+#hamburger-menu {
+  display: none;
+}
 
 /* min-width: 768px - max-width: 992px */
 @media screen and (min-width: 768px) and (max-width: 992px) /* Tablets / Small screens / Laptops*/ {
@@ -328,6 +335,148 @@ footer {
       .card-group {
         .card {
           flex-basis: 45%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) /* Phone*/ {
+  header {
+    nav {
+      img {
+        padding-left: 20px;
+      }
+      #navbar-ol {
+        display: none;
+      }
+      /* Hide toggle selector */
+      #hamburger-input {
+        display: none;
+      }
+      /* Hamburger icon */
+      #hamburger-menu {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        border: none;
+        padding: 0px;
+        margin-right: 20px;
+        background: linear-gradient(
+          to bottom,
+          $special-color,
+          $special-color 20%,
+          $bg-color 20%,
+          $bg-color 40%,
+          $special-color 40%,
+          $special-color 60%,
+          $bg-color 60%,
+          $bg-color 80%,
+          $special-color 80%,
+          $special-color 100%
+        );
+        /* Hamburger menu slide */
+        #sidebar-menu {
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          visibility: hidden;
+          position: fixed;
+          top: 0;
+          right: -250px;
+          bottom: 0;
+          width: 200px;
+          background-color: $bg-color;
+          overflow-y: hidden;
+          height: 100%;
+          border-left: 2px solid $special-color;
+          transition: 0.3s;
+          padding: 0px 10px;
+          #sidebar-ol {
+            font-family: $secondary-font;
+            padding-left: 0px;
+            margin: 0;
+            a {
+              color: $text-color;
+              font-size: 20px;
+              text-decoration: none;
+              li {
+                list-style-type: none;
+                padding: 25px 0;
+              }
+            }
+            a:active {
+              text-decoration: underline;
+              color: $special-color;
+            }
+          }
+        }
+      }
+
+      #hamburger-input:checked + #hamburger-menu {
+        #sidebar-menu {
+          visibility: visible;
+          right: 0;
+        }
+      }
+    }
+  }
+  main {
+    .vertical-mail {
+      display: none;
+    }
+    section {
+      padding: 0 25px;
+      p {
+        text-align: start;
+        white-space: normal;
+      }
+      .h2-section::after {
+        width: 60px;
+      }
+    }
+    .about-section {
+      padding-top: 50px;
+      height: max-content;
+      .about-text {
+        ul.list-skill {
+          width: 100%;
+        }
+      }
+    }
+    .title-section {
+      height: max-content;
+      padding-top: 50px;
+      #sub-title {
+        white-space: normal;
+        letter-spacing: 0px;
+        border-right: none;
+        animation: none;
+      }
+    }
+    .project-section {
+      height: max-content;
+      padding-top: 50px;
+      .card-group {
+        .card {
+          flex-basis: 100%;
+          .card-text {
+            &:active {
+              opacity: 0.9;
+              background-color: $special-color;
+            }
+          }
+        }
+      }
+    }
+    .contact-section {
+      padding-top: 50px;
+      height: max-content;
+      .contact-me {
+        flex-direction: column;
+        a {
+          margin-top: 25px;
         }
       }
     }

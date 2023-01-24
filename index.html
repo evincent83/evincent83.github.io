@@ -18,8 +18,9 @@
 <body>
     <header>
         <nav>
+            <!-- Sidebar menu for computer / tablets-->
             <a href="https://github.com/evincent83" target="_blank"><img src="img/logo.png" alt="Logo"></a>
-            <ol>
+            <ol id="navbar-ol">
                 <a href="#about">
                     <li><b>01.</b>À Propos</li>
                 </a>
@@ -30,6 +31,23 @@
                     <li><b>03.</b>Contact</li>
                 </a>
             </ol>
+            <!-- Sidebar menu for mobile-->
+            <input type="checkbox" id="hamburger-input"/>
+            <label id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <ol id="sidebar-ol">
+                        <a href="#about">
+                            <li><b>01.</b>À Propos</li>
+                        </a>
+                        <a href="#projet">
+                            <li><b>02.</b>Mes Projets</li>
+                        </a>
+                        <a href="#contact">
+                            <li><b>03.</b>Contact</li>
+                        </a>
+                    </ol>
+                </nav>
+            </label>
         </nav>
     </header>
     <main>
@@ -46,9 +64,10 @@
         <section id="about" class="about-section">
             <h2 class="h2-section"><b>01.</b>À Propos</h2>
             <div class="about-text">
-                <p>Bonjour et bienvenue sur mon Portfolio, je m'appelle <b>Enzo</b> et je suis développeur web - front-end.
+                <p>Bonjour et bienvenue sur mon Portfolio, je m'appelle <b>Enzo</b> et je suis développeur web -
+                    front-end.
                     Passionné par l'informatique depuis de nombreuses années, je me suis spécialisé et formé récemment
-                    dans le développement web. Je suis curieux, motivé et ambitieux de réaliser des projets. 
+                    dans le développement web. Je suis curieux, motivé et ambitieux de réaliser des projets.
                     J'aime apprendre constamment des nouvelles choses.</p>
                 <p>Voici différentes <b>technologies</b> avec lesquels j'ai pu travailler :</p>
                 <div data-aos="fade-down" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
