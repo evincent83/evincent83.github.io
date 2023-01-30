@@ -285,6 +285,9 @@ main {
             background-color: $text-color;
           }
         }
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
@@ -480,6 +483,9 @@ html {scroll-behavior: smooth;}
               opacity: 0.9;
               background-color: $special-color;
             }
+          }
+          &:hover {
+            transform: none;
           }
         }
       }

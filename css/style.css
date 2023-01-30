@@ -286,6 +286,9 @@ main .project-section .card-group .card .card-content:hover {
   opacity: 0.9;
   background-color: #f0f3f6;
 }
+main .project-section .card-group .card:hover {
+  transform: scale(1.1);
+}
 main .contact-section {
   height: 500px;
 }
@@ -454,6 +457,9 @@ footer p {
   main .project-section .card-group .card .card-content:active {
     opacity: 0.9;
     background-color: #61dafb;
+  }
+  main .project-section .card-group .card:hover {
+    transform: none;
   }
   main .contact-section {
     padding-top: 50px;
